@@ -1,0 +1,83 @@
+.formContainer {
+    margin-top: 20px; /* Adjusted margin-top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Adjusted padding */
+    background-color: #e4dcde;
+    color: aliceblue;
+    margin-bottom: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-height: 70vh;
+    overflow-y: auto;  
+}
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    background-image: linear-gradient(45deg, #f1b52a, #74ac14);
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .inputDiv {
+    background-color: rgb(206, 206, 206);
+    border-radius: 0px;
+    margin: 10px 0; /* Adjusted margin */
+    padding: 10px; /* Adjusted padding */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #141513;
+  }
+  
+  label,
+  input {
+    display: grid;
+    grid-template-columns: max-content;
+    padding: 5px;
+  }
+  
+  .addProductBtn{
+    margin: 10px;
+   padding: 3px 10px 3px 10px;
+   background-color: aliceblue;
+   color: rgb(0, 0, 0);
+  }
+  /*.card {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add some margin between cards */
+ /* }
+  */
+  .messageTextarea {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    padding: 20px;
+    border: none;
+    background-color: rgb(251, 245, 245);
+    color: rgb(16, 15, 15);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .message {
+    color: rgb(15, 14, 14);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: auto;
+  }
+  
+  .addProductBtn {
+    margin: 10px;
+    padding: 3px 10px 3px 10px;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    margin-left: 40px;
+  }
+  .message1{
+    color: white;
+  }
