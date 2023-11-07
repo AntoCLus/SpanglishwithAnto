@@ -28,12 +28,12 @@ function Footer() {
         <div className="row">
           <ul>
           <li><Link to="/contact">Contact us</Link></li>
-            <li><Link to="/services">Our Services</Link></li>
+          <li><Link to="/services">Our Services</Link></li>
           </ul>
         </div>
 
         <div className="row">
-          SYS Copyright © 2023 Sell Your Stuff - All rights reserved 
+        SpanglishWithAnto ©2023 by SpanglishWithAnto.
         </div>
       </div>
     

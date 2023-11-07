@@ -1,7 +1,7 @@
 import React from "react";
-import jwt_decode from "jwt-decode";
+//import jwt_decode from "jwt-decode";
 import { Link, useNavigate } from "react-router-dom";
-
+import * as jwt_decode from 'jwt-decode';
 import "./navBar.css";
 // import App from "../App"
 
@@ -36,7 +36,7 @@ function NavBar() {
       {!token ? (
         <nav className="navContainer">
           <div>
-            <h1>SYS</h1>
+            <h1></h1>
           </div>
           <div>
             {/* <Link to="/form">Post an ad</Link> */}
@@ -48,7 +48,7 @@ function NavBar() {
       ) : (
         <nav className="navContainer">
           <div>
-            <h1>SYS</h1>
+            <h1></h1>
           </div>
           <div>
             <Link className="links" >{decoded.email}</Link>
