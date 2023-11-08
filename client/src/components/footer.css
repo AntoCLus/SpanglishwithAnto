@@ -21,6 +21,7 @@ body{
     padding: 0.2%;   
     color:  #56AC41(19, 167, 167);
     font-size:0.8em;
+  
     }
     
     .footer .row a{
@@ -30,7 +31,8 @@ body{
     }
     
     .footer .row a:hover{
-    color:#ffffff;
+        color: rgb(207, 207, 37);
+        font-size: larger;
     }
     
     .footer .row ul{
@@ -60,4 +62,7 @@ body{
     .footer .row a i{
     margin:0% 3%;
     }
+    }
+    .footer .row p{
+        margin-left: 30px;
     }

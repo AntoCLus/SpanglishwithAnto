@@ -27,13 +27,13 @@ function Footer() {
 
         <div className="row">
           <ul>
-          <li><Link to="/contact">Contact us</Link></li>
-          <li><Link to="/services">Our Services</Link></li>
+          <li><Link to="/contact">Contact </Link></li>
+          <li><Link to="/services"> Services</Link></li>
           </ul>
         </div>
 
         <div className="row">
-        SpanglishWithAnto ©2023 by SpanglishWithAnto.
+        <p> SpanglishWithAnto ©2023 by SpanglishWithAnto.</p>
         </div>
       </div>
     

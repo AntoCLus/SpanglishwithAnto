@@ -5,11 +5,11 @@ import Header from './components/header';
 import Footer from './components/footer'
 import Home from './pages/home.js';
 import FreeResources from './pages/freeResources/freeresourcesmain.js';
-import About from './pages/about';
+
 import ContactForm from './pages/contactUs';
 import FAQ from './pages/faq';
 import Services from './pages/services';
-import Testimonials from './pages/testimonials';
+
 import NavBar from "./components/navBar.js"
 
 const App = () => {
@@ -23,11 +23,10 @@ const App = () => {
           
           <Route path="/" exact component={<Home/>} />
           <Route path="/free-resources" component={<FreeResources/>} />
-          <Route path="/about" component={<About/>} />
           <Route path="/contact" component={<ContactForm/>} />
           <Route path="/faq" component={<FAQ/>} />
           <Route path="/services" component={<Services/>} /> 
-          <Route path="/testimonials" component={<Testimonials/>} />
+          
           
           </Routes>
 
