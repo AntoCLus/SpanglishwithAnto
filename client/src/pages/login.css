@@ -5,6 +5,7 @@ form{
   align-items: center;
   gap: 0.8rem;
   padding-top: 1.5rem;
+  margin-bottom: 100px; 
 }
 .custom-control-custom-checkbox{
   display: flex;

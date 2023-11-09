@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema(
         password: String,
         name: String,
         lastName: String,
-        userType: {type:String,enum:["buyer","seller"]}
+        userType: {type:String,enum:["admin","user"]}
     },
     {
         timestamps: true,

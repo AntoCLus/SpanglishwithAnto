@@ -5,6 +5,7 @@ import * as jwt_decode from 'jwt-decode';
 import "./navBar.css";
 // import App from "../App"
 
+
 function NavBar() {
   const navigate = useNavigate();
   let token;

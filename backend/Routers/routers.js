@@ -2,18 +2,18 @@ const express = require("express");
 const router = express.Router();
 const verifyToken = require("../middleware/authorization");
 const {
-    getAllProducts,
-    createProduct,
-    updateProduct,
-    deleteProduct,
+    getAllServices,
+    createService,
+    updateService,
+    deleteService,
     register,
     login,
   } = require("../controllers/controllers");
 
-  router.get("/", getAllProducts);
-  router.post("/create",verifyToken, createProduct);
-  router.put("/:id", updateProduct);
-  router.delete("/:id", deleteProduct);
+  router.get("/", getAllServices);
+  router.post("/create",verifyToken, createService);
+  router.put("/:id", updateService);
+  router.delete("/:id", deleteService);
   router.post("/register",register)
   router.post("/login",login)
 
