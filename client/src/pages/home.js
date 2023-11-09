@@ -4,18 +4,19 @@ function Home  ()  {
   return (
     <div className="home">
       <div className="intro">
-        <img src="../images/welcome.webp" alt="Welcome" />
+        <img src="backgorund2.jpg" alt="Welcome" />
+        <h2> Welcome </h2>
         <p>You think you know but you may not. Book a lesson today to know what is what. :)</p>
       </div>
 
       <div className="about">
-        <img src="path_to_your_about_image.jpg" alt="About Me" />
-        <p>About Me Paragraph</p>
+        <img src="" alt="About Me" />
+        <h2>About Me </h2>
       </div>
 
       <div className="testimonials">
         <h2>Testimonials</h2>
-        {/* Map through your testimonials data and display them */}
+        
       </div>
     </div>
   );

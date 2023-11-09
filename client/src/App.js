@@ -5,7 +5,6 @@ import Header from './components/header';
 import Footer from './components/footer'
 import Home from './pages/home.js';
 import FreeResources from './pages/freeResources/freeresourcesmain.js';
-
 import ContactForm from './pages/contactUs';
 import FAQ from './pages/faq';
 import Services from './pages/services';
@@ -21,11 +20,11 @@ const App = () => {
         <Header />
         <Routes>
           
-          <Route path="/" exact component={<Home/>} />
-          <Route path="/free-resources" component={<FreeResources/>} />
-          <Route path="/contact" component={<ContactForm/>} />
-          <Route path="/faq" component={<FAQ/>} />
-          <Route path="/services" component={<Services/>} /> 
+          <Route path="/" exact element={<Home/>} />
+          <Route path="/free-resources" element={<FreeResources/>} />
+          <Route path="/contact" element={<ContactForm/>} />
+          <Route path="/faq" element={<FAQ/>} />
+          <Route path="/services" element={<Services/>} /> 
           
           
           </Routes>
