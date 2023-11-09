@@ -1,0 +1,62 @@
+.header {
+    background-color: #56AC41;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo */
+  .header h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 60px;
+    color: #FFFFFF;
+    align-items: center;
+    display: center;
+    margin-left: 400px;
+  }
+  
+  /* Navigation Links */
+  .header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .header nav ul li {
+    margin: 0 10px; 
+  }
+  
+  .header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color  0.3s;
+    margin-left: 150px
+  }
+  
+  /* Buttons */
+  .header button {
+    background-color: #56AC41;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Adjustments for specific pages (e.g., Home, Free Resources, etc.) */
+  /* Example for Home page button */
+  .header .home-button {
+    background-color: #FFFFFF;
+    color: #56AC41;
+  }
+  .header .nav-link:hover {
+    color: rgb(207, 207, 37);
+    font-size: larger;
+  }

@@ -1,5 +1,5 @@
 .links{
-  color: rgb(24, 187, 187);
+  color:  #56AC41(24, 187, 187);
   text-decoration: none; 
   margin-right: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -10,22 +10,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 10px;
     padding: 20px;
-    background-color: #333435;
+    background-color: #e6e7e9;
     color: #F5f7f7;
     box-shadow: 5px 10px 10px rgba(168, 15, 15, 0.5);
 
 }
-
-.navContainer h1 {
+/*.navContainer h1 {
     margin-left: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(19, 167, 167);
     opacity: 0.95;
     letter-spacing: 20px;
     font-size: xx-large;
-  }
+  }*/
 
   .navContainer div {
     display: flex;

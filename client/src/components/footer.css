@@ -7,7 +7,6 @@ body{
     
     .footer{
     position: fixed;
-    background-color: #333435;
     padding:2px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
@@ -20,18 +19,20 @@ body{
     width:100%;
     margin:0.2% 0%;
     padding: 0.2%;   
-    color: rgb(19, 167, 167);
+    color:  #56AC41(19, 167, 167);
     font-size:0.8em;
+  
     }
     
     .footer .row a{
     text-decoration:none;
-    color: rgb(19, 167, 167);
+    color: #56AC41(19, 167, 167);
     transition:0.5s;
     }
     
     .footer .row a:hover{
-    color:#fff;
+        color: rgb(207, 207, 37);
+        font-size: larger;
     }
     
     .footer .row ul{
@@ -61,4 +62,7 @@ body{
     .footer .row a i{
     margin:0% 3%;
     }
+    }
+    .footer .row p{
+        margin-left: 30px;
     }
