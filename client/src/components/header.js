@@ -8,7 +8,7 @@ const Header = () => {
       <h1 className="logo">SPANGLISH WITH ANTO</h1>
       <nav>
         <ul>
-          <li><Link to="/" className="nav-link">Home</Link></li>
+          <li><Link to="/home" className="nav-link">Home</Link></li>
           <li><Link to="/free-resources" className="nav-link">Free Resources</Link></li>
           <li><Link to="/contact" className="nav-link">Contact</Link></li>
           <li><Link to="/faq" className="nav-link">FAQ</Link></li>

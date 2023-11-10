@@ -6,7 +6,7 @@ body{
     }
     
     .footer{
-    position: fixed;
+    position: absolute;
     padding:2px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;

@@ -40,7 +40,7 @@ function NavBar() {
           <Link className="links" to="/">{decoded && decoded.email ? decoded.email : 'user'}</Link>
           </div>
           <div>
-            { <Link to="/form">Add a service</Link> }
+            { <Link to="/form"></Link> }
             <Link className="links" to="signup">Sign up</Link>
             <Link className="links" to="login">Log in</Link>
             <Link className="links" to="/"></Link>

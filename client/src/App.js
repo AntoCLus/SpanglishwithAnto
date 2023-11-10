@@ -40,7 +40,6 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/form" element ={<AddService getAllServices={getAllServices}/>}/>
-          <Route path="/" element={<List service={service} getAllServices={getAllServices} />} />
           <Route path="/home" element={<Home/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
@@ -48,6 +47,8 @@ const App = () => {
           <Route path="/contact" element={<ContactForm/>} />
           <Route path="/faq" element={<FAQ/>} />
           <Route path="/services" element={<Services/>} /> 
+          <Route path="/" element={<List service={service} getAllServices={getAllServices} />} />
+
           
           
           </Routes>
