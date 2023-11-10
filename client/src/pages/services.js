@@ -5,16 +5,19 @@ const ServicesPage = () => {
   return (
     <div className="services-page-container">
       <div className="card">
-        <h2>Get More Visibility for Your Ads</h2>
-        <a href='./' className='sus'>Upgrade your subscription for $10 per month to make your ads more visible.</a>
+        <h2>Book a lesson today!!</h2>
+        <a href='./' className='sus'>Get a 1-1 lesson!</a>
+        <button onclick="bookClass()">Book a Class</button>
       </div>
       <div className="card">
-        <h2>Our Mission</h2>
-        <p className='p2'>The page specializes in facilitating the buying and selling of items through personal contacts. Users can publish ads to showcase items they want to sell or find items to purchase from others.</p>
+        <h2>Book a course today!!</h2>
+        <p className='p2'>Get a course today</p>
+        <button onclick="bookCourse()">Book a Course</button>
       </div>
       <div className="card">
-        <h2>Our Rules</h2>
-        <p className='p2'>As part of our community, we encourage politeness and respectful interactions between users. Treat others the way you'd like to be treated and ensure a positive experience for everyone.</p>
+        <h2>Get a free Meeting</h2>
+        <p className='p2'>Talk to the teacher for a better approach</p>
+        <button onclick="bookFreeClass()">Book a Free Class</button>
       </div>
     </div>
   );

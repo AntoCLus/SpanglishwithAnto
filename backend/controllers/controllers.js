@@ -1,44 +1,43 @@
-const Product = require("../models/model");
+const Services = require("../models/serviceModel");
 const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const verifyToken = require("../middleware/authorization");
 require("dotenv").config();
 
-const getAllProducts = async (req, res) => {
+const getAllServices = async (req, res) => {
   try {
-    let products = await Product.find().populate("creator", "email");
-    res.status(200).send(products);
+    let services = await Services.find().populate("creator", "email");
+    res.status(200).send(services);
   } catch (error) {
     console.log(error);
     res.status(500).send({ msg: "server error from getAll controllers" });
   }
 };
 
-const createProduct = async (req, res) => {
+const createService = async (req, res) => {
   try {
     console.log(req.user)
     let creator = req.user.id;
-    let { title, imgUrl, description, price } = req.body;
-    let newProduct = {
+    let { title, description, price } = req.body;
+    let newService = {
       title,
-      imgUrl,
       description,
       price,
       creator,
     };
-    let product = await Product.create(newProduct);
-    res.send(newProduct);
+    let service = await Service.create(newService);
+    res.send(newService);
   } catch (error) {
     console.log(error);
     res.status(500).send({ msg: "server error from create controllers" });
   }
 };
 
-const updateProduct = async (req, res) => {
+const updateService = async (req, res) => {
   try {
     let clientValue = req.body;
-    await Product.updateOne({ _id: req.params.id }, clientValue);
+    await Service.updateOne({ _id: req.params.id }, clientValue);
     res.status(200).send({ msg: "update is work" });
   } catch {
     console.log(error);
@@ -46,9 +45,9 @@ const updateProduct = async (req, res) => {
   }
 };
 
-const deleteProduct = async (req, res) => {
+const deleteService = async (req, res) => {
   try {
-    await Product.deleteOne({ _id: req.params.id });
+    await Service.deleteOne({ _id: req.params.id });
     res.status(200).send({ msg: "delete is work" });
   } catch {
     console.log(error);
@@ -79,7 +78,7 @@ const login = async (req, res) => {
     let { email, password } = req.body;
     if (!email || !password) {
       return res
-        .status(402)
+        .status(400)
         .send({ msg: "Both email and password are required" });
     }
     let oldUser = await User.findOne({ email });
@@ -110,10 +109,10 @@ const login = async (req, res) => {
 };
 
 module.exports = {
-  getAllProducts,
-  createProduct,
-  updateProduct,
-  deleteProduct,
+  getAllServices,
+  createService,
+  updateService,
+  deleteService,
   register,
   login,
 };

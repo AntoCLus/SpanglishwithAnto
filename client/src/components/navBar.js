@@ -1,9 +1,10 @@
 import React from "react";
-//import jwt_decode from "jwt-decode";
+//import jwt_decode from "jwt-decode"
 import { Link, useNavigate } from "react-router-dom";
 import * as jwt_decode from 'jwt-decode';
 import "./navBar.css";
 // import App from "../App"
+
 
 function NavBar() {
   const navigate = useNavigate();
@@ -33,13 +34,13 @@ function NavBar() {
 
   return (
     <>
-      {!token ? (
+      {token && decoded ? (
         <nav className="navContainer">
           <div>
-            <h1></h1>
+          <Link className="links" to="/">{decoded && decoded.email}</Link>
           </div>
           <div>
-            {/* <Link to="/form">Post an ad</Link> */}
+            { <Link to="/form">Post an ad</Link> }
             <Link className="links" to="signup">Sign up</Link>
             <Link className="links" to="login">Log in</Link>
             <Link className="links" to="/"></Link>
@@ -48,12 +49,11 @@ function NavBar() {
       ) : (
         <nav className="navContainer">
           <div>
-            <h1></h1>
           </div>
           <div>
             <Link className="links" >{decoded.email}</Link>
-            <Link className="links" to="/form">Post an ad</Link>
-            <Link className="links" to="/">Ads</Link>
+            <Link className="links" to="/form">Add a service</Link>
+            <Link className="links" to="/">Service</Link>
             <Link className="links" onClick={handleLogout}>Log out</Link>
           </div>
         </nav>
