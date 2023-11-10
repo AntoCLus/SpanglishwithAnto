@@ -37,10 +37,10 @@ function NavBar() {
       {token && decoded ? (
         <nav className="navContainer">
           <div>
-          <Link className="links" to="/">{decoded && decoded.email}</Link>
+          <Link className="links" to="/">{decoded && decoded.email ? decoded.email : 'user'}</Link>
           </div>
           <div>
-            { <Link to="/form">Post an ad</Link> }
+            { <Link to="/form">Add a service</Link> }
             <Link className="links" to="signup">Sign up</Link>
             <Link className="links" to="login">Log in</Link>
             <Link className="links" to="/"></Link>
@@ -51,7 +51,6 @@ function NavBar() {
           <div>
           </div>
           <div>
-            <Link className="links" >{decoded.email}</Link>
             <Link className="links" to="/form">Add a service</Link>
             <Link className="links" to="/">Service</Link>
             <Link className="links" onClick={handleLogout}>Log out</Link>
