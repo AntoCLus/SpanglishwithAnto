@@ -41,7 +41,7 @@ const App = () => {
         <Routes>
           <Route path="/form" element ={<AddService getAllServices={getAllServices}/>}/>
           <Route path="/" element={<List service={service} getAllServices={getAllServices} />} />
-          <Route path="/" exact element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/free-resources" element={<FreeResources/>} />
           <Route path="/contact" element={<ContactForm/>} />
           <Route path="/faq" element={<FAQ/>} />

@@ -23,7 +23,7 @@ function ServiceItem({ getAllServices, service }) {
         .map((s) => s._id);
       setCreatorIds(updatedCreatorIds);
     }
-  }, [service]);
+  }, [decoded, service]);
 
   // Function to toggle editing mode for a specific service
   const toggleEditing = (id) => {

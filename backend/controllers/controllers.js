@@ -78,7 +78,7 @@ const login = async (req, res) => {
     let { email, password } = req.body;
     if (!email || !password) {
       return res
-        .status(402)
+        .status(400)
         .send({ msg: "Both email and password are required" });
     }
     let oldUser = await User.findOne({ email });
