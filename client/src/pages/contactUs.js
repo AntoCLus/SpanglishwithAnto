@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import "./contactUs.css"
+import "../components/footer.css"
 
 
 function ContactForm() {
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your form submission logic here

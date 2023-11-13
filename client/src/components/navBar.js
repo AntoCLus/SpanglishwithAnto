@@ -34,13 +34,13 @@ function NavBar() {
 
   return (
     <>
-      {token && decoded ? (
+      {!token ? (
         <nav className="navContainer">
           <div>
-          <Link className="links" to="/">{decoded && decoded.email ? decoded.email : 'user'}</Link>
+          <Link className="links" to="/">{decoded && decoded.email ? decoded.email : ''}</Link>
           </div>
           <div>
-            { <Link to="/form">Add a service</Link> }
+            { /*<Link to="/form"></Link>*/ }
             <Link className="links" to="signup">Sign up</Link>
             <Link className="links" to="login">Log in</Link>
             <Link className="links" to="/"></Link>
@@ -51,8 +51,9 @@ function NavBar() {
           <div>
           </div>
           <div>
-            <Link className="links" to="/form">Add a service</Link>
-            <Link className="links" to="/">Service</Link>
+            
+            <Link className="links" to="/form"></Link>
+            <Link className="links" to="/services"></Link>
             <Link className="links" onClick={handleLogout}>Log out</Link>
           </div>
         </nav>
@@ -62,3 +63,14 @@ function NavBar() {
 }
 
 export default NavBar;
+
+/*
+  function handleLogout() {
+    if (token) {
+      localStorage.removeItem("token");
+      navigate("/login");
+      window.location.reload();
+    } else {
+      return;
+    }
+  } */

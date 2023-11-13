@@ -20,6 +20,7 @@ import List from './components/list.js';
 
 const App = () => {
   const [service, setService] = useState([]);
+  const [loggedIn, setLoggedIn] = useState(false);
 
   const getAllServices = useCallback(async () => {
     try {
@@ -34,25 +35,30 @@ const App = () => {
     getAllServices();
   }, [getAllServices]);
 
+  const handleLogout = () => {
+    console.log("Logging out...");
+    setLoggedIn(false)
+  }
+
   return (
     <BrowserRouter className="serviceForm">
-       <NavBar />
+       <NavBar onLogout={handleLogout} />
         <Header />
         <Routes>
           <Route path="/form" element ={<AddService getAllServices={getAllServices}/>}/>
-          <Route path="/" element={<List service={service} getAllServices={getAllServices} />} />
           <Route path="/home" element={<Home/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/free-resources" element={<FreeResources/>} />
           <Route path="/contact" element={<ContactForm/>} />
           <Route path="/faq" element={<FAQ/>} />
           <Route path="/services" element={<Services/>} /> 
-          
+          <Route path="/" element={<List service={service} getAllServices={getAllServices} />} />
           
           </Routes>
-
           <Footer />
+        
    
     </BrowserRouter>
   );

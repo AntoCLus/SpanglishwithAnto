@@ -1,15 +1,17 @@
+
 .formContainer {
-    margin-top: 20px; /* Adjusted margin-top */
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px; /* Adjusted padding */
+    padding: 10px; 
     background-color: #e4dcde;
     color: aliceblue;
     margin-bottom: 100px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     max-height: 70vh;
     overflow-y: auto;  
+   
 }
   .form1 {
     display: flex;

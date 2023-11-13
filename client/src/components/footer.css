@@ -3,10 +3,11 @@ body{
     overflow-x:hidden;
     position: relative; 
     min-height: 90vh;
+    padding-top: 50px;
     }
     
     .footer{
-    position: fixed;
+    position: absolute;
     padding:2px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;

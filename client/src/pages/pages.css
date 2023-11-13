@@ -1,3 +1,100 @@
 body{
     margin-bottom: 100px; 
+    display: flexbox;
+    
 }
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .intro {
+    background-image: url('../images/welcome.jpg');
+    background-size: cover;
+    padding: 50px;
+    color: white; 
+    margin-bottom: 60px;
+
+  }
+  .intro p, .about-content, .pictures p{
+color: rgb(226, 234, 227);
+text-align: center;
+font-family: Inter, sans-serif;;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color: transparent;
+text-decoration: none;
+margin-top: 20px;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/room.jpg');
+    background-size: cover;
+    padding: 50px;
+    color: white; 
+   
+  }
+  .about-content{
+    background-image: none;
+    font-family: Inter, sans-serif;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    font-size: x-large;
+    background-color: color-mix(in green srgb, color 30% percentage, color white);
+
+  }
+  .pictures{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+.pictures .picture1{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    min-width: 700px;
+    min-height: 300px;
+
+ }
+ .pictures .picture2{
+    background-image: url('../images/writing.jpg') ;
+    background-size: cover;
+    min-width: 700px;
+ }
+ .pictures p{
+    color: black;
+    margin-top: 100px;
+    font-weight: bolder;
+ }
+  
+  .testimonials {
+    padding: 80px;
+    font-family: Inter, sans-serif;
+  
+  }
+  .testimonials p{
+    font-style: italic;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: x-large;
+  }
+  .card{
+    border-radius: 10px;
+    max-width: 300px;
+  }
+  .fr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
