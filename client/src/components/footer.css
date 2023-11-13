@@ -3,6 +3,7 @@ body{
     overflow-x:hidden;
     position: relative; 
     min-height: 90vh;
+    padding-top: 50px;
     }
     
     .footer{
