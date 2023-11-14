@@ -52,8 +52,8 @@ function NavBar() {
           </div>
           <div>
             
-            <Link className="links" to="/form"></Link>
-            <Link className="links" to="/services"></Link>
+            <Link className="links" to="/form">add</Link>
+            <Link className="links" to="/services">services</Link>
             <Link className="links" onClick={handleLogout}>Log out</Link>
           </div>
         </nav>

@@ -7,7 +7,8 @@ require("dotenv").config();
 
 const getAllServices = async (req, res) => {
   try {
-    let services = await Services.find().populate("creator", "email");
+    let services = await Services.find({})
+    console.log(services)
     res.status(200).send(services);
   } catch (error) {
     console.log(error);
@@ -17,17 +18,18 @@ const getAllServices = async (req, res) => {
 
 const createService = async (req, res) => {
   try {
-    console.log(req.user)
-    let creator = req.user.id;
+    //console.log(req.user)
+    //let creator = req.user.id;
+    console.log(req);
     let { title, description, price } = req.body;
     let newService = {
       title,
       description,
       price,
-      creator,
     };
-    let service = await Service.create(newService);
-    res.send(newService);
+    console.log(newService);
+    let service = await Services.create(newService);
+    res.send(service);
   } catch (error) {
     console.log(error);
     res.status(500).send({ msg: "server error from create controllers" });
