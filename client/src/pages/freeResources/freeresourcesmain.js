@@ -25,7 +25,7 @@ const FreeResources = () => {
   };
 
   return (
-    <div>
+    <div className='fr-background'>
       <h1 className='fr'>Free Resources</h1>
 
       <div>

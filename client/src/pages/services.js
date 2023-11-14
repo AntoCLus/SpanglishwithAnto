@@ -2,17 +2,28 @@ import React from 'react';
 import "./services.css"
 
 const ServicesPage = () => {
+  const calendarStyle = {
+    border: 'solid 1px #777',
+  };
 
   
   return (
-  
     <div className="services-page-container"> 
-    < div className="card"> 
+    <div className='calendar'>
     <h2> SERVICES</h2>
-    <p> Sign up and log in to your account to have access to your class material and bookings.</p>
+    <p> Sign up and log in to your account to have </p>
+      <p>access to your class material and bookings.</p>
     <p> Contact the teacher to agree on a schedule.</p>
-
-    </div>
+    <p> Have a look at the appointment schedule!.</p>
+    <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FBelgrade&src=YW50b2x1c3RyYWR1Y2Npb25lc0BnbWFpbC5jb20&color=%23039BE5"
+          style={calendarStyle}
+          width="500"
+          height="500"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>  
+    </div> 
       <div className="card">
         <h2>Book an English lesson today!!</h2>
         <a href='./' className='sus'>Get a 1-1 lesson!</a>
@@ -35,13 +46,11 @@ const ServicesPage = () => {
         <p className='p2'>Adults</p>
         <p>40 usd / 4 lessons</p>
         <button onclick="bookCourse()">Book a Course </button>
-      </div>
-      <div className="card">
         <h2>Get a free Meeting</h2>
         <p className='p2'>Talk to the teacher for a better approach</p>
         <button onclick="bookFreeClass()">Book a Free Class</button>
       </div>
-    </div>
+         </div>
   );
 }
 
