@@ -103,3 +103,7 @@
     white-space: nowrap; 
     width: 1px;
   }
+  .card p{
+    font-size: large;
+    text-decoration: none;
+  }
