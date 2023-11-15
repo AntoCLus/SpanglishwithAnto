@@ -16,6 +16,7 @@ import axios from 'axios';
 import { useState, useCallback, useEffect } from 'react';
 import AddService from './components/serviceForm.js';
 import List from './components/list.js';
+import Payment from './pages/payment'
 
 
 const App = () => {
@@ -55,6 +56,7 @@ const App = () => {
           <Route path="/faq" element={<FAQ/>} />
           <Route path="/services" element={<Services/>} /> 
           <Route path="/" element={<List service={service} getAllServices={getAllServices} />} />
+          <Route path="/payment" element={<Payment />} />
           
           </Routes>
           <Footer />
