@@ -17,6 +17,8 @@ function Payment() {
   };
 
   const [message, setMessage] = useState("");
+  
+ 
 
   return (
     <div className="App">
@@ -24,8 +26,7 @@ function Payment() {
         <PayPalButtons
           style={{
             shape: "rect",
-            //color:'blue' change the default color of the buttons
-            layout: "vertical", //default value. Can be changed to horizontal
+            layout: "vertical", 
             display: "block",
             justifyContent: "center",
             alignItems: "center",
@@ -38,8 +39,6 @@ function Payment() {
                 headers: {
                   "Content-Type": "application/json",
                 },
-                // use the "body" param to optionally pass additional order information
-                // like product ids and quantities
                 body: JSON.stringify({
                   cart: [
                     {
@@ -81,6 +80,7 @@ function Payment() {
                   },
                 },
               );
+              
 
               const orderData = await response.json();
               // Three cases to handle:

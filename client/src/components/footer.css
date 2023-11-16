@@ -3,7 +3,7 @@ body{
     overflow-x:hidden;
     position: relative; 
     min-height: 90vh;
-    padding-top: 50px;
+    padding-top: 80px;
     }
     
     .footer{
@@ -13,6 +13,7 @@ body{
     text-align:center;
     bottom: 0; 
     width: 100%;
+    margin-top: 80px;
        }
     
     .footer .row{
@@ -64,5 +65,5 @@ body{
     }
     }
     .footer .row p{
-        margin-left: 70px;
+        margin-left: 10px;
     }

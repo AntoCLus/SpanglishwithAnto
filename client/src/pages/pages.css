@@ -3,7 +3,14 @@ body{
     display: flexbox;
     
 }
-
+.mt-5{
+  margin-bottom: 100px; 
+  max-height: 500px;
+  overflow-y: auto;
+}
+.mdb-accordion-item {
+  margin-bottom: 20px; 
+}
 .home {
     display: flex;
     flex-direction: column;
@@ -101,4 +108,45 @@ margin-top: 20px;
   
   .fr-background{
     background-image: url('../images/b08b5f0f1977452da106294351c7075b.webp');
+    margin-bottom: 100px;
   }
+  .frp{
+    text-decoration: none;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .pictures .picture3{
+    background-image: url('../images/876e5464d9444627b476d94eb90d4ea5.webp');
+    background-size: cover;
+    min-width: 700px;
+    min-height: 300px;
+
+ }
+ .pictures .picture4{
+    background-image: url('../images/f3be4ff2da7642d887eb5094442c39f5.webp') ;
+    background-size: cover;
+    min-width: 700px;
+ }
+ .fr-link {
+  text-decoration: none;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: rgb(12, 188, 47);
+  font-size: 1.2em; 
+  transition: font-size 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.fr-link:hover {
+  font-size: 1.4em; /* Increase the font size on hover */
+  cursor: pointer; /* Change the cursor on hover to indicate it's clickable */
+}
