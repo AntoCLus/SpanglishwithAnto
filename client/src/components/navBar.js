@@ -1,7 +1,8 @@
 import React from "react";
 //import jwt_decode from "jwt-decode"
 import { Link, useNavigate } from "react-router-dom";
-import * as jwt_decode from 'jwt-decode';
+import {jwtDecode} from 'jwt-decode';
+
 import "./navBar.css";
 // import App from "../App"
 
@@ -10,11 +11,12 @@ function NavBar() {
   const navigate = useNavigate();
   let token;
   let decoded;
+  let userType;
   try {
     token = localStorage.getItem("token");
 
     if (token) {
-      decoded = jwt_decode(token);
+      decoded = jwtDecode(token);
     }
     console.log("Token:", token);
   console.log("Decoded:", decoded);
@@ -51,10 +53,20 @@ function NavBar() {
           <div>
           </div>
           <div>
-            
-            <Link className="links" to="/form">add</Link>
-            <Link className="links" to="/services">services</Link>
-            <Link className="links" onClick={handleLogout}>Log out</Link>
+          {decoded.userType === "user" ? (
+              ""
+            ) : (
+              <>
+                <Link className="links" to="/form">
+                  add
+                </Link>
+
+                <Link className="links" to="/services">
+                  services
+                </Link>
+              </>
+            )}
+        <Link className="links" onClick={handleLogout}>Log out</Link>
           </div>
         </nav>
       )}
