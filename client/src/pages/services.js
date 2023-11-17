@@ -1,7 +1,10 @@
 import React from 'react';
 import "./services.css"
 import { Link } from 'react-router-dom';
-
+import axios from 'axios'
+import '../components/serviceForm'
+import '../components/serviceItem'
+import { useState, useCallback, useEffect } from 'react';
 
 
 const ServicesPage = () => {
@@ -9,6 +12,23 @@ const ServicesPage = () => {
   const calendarStyle = {
     border: 'solid 1px #777',
   };
+  const [service, setService] = useState([]);
+  const getAllServices = useCallback(async () => {
+    try {
+      const response = await axios.get("http://localhost:8000");
+      setService(response.data);
+      console.log (response.data)
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+  
+
+  useEffect(() => {
+    getAllServices();
+  }, [getAllServices]);
+
+
   const createOrder = async (lessonType, lessonPrice) => {
     try {
       const response = await fetch("/api/orders", {
@@ -74,6 +94,17 @@ const ServicesPage = () => {
           frameborder="0"
           scrolling="no"
         ></iframe>  
+        <div className="service-list">
+        {service.map((item, index) => (
+          <div key={index} className="card">
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            {/* Enlace para realizar la acción deseada, por ejemplo: */}
+            <Link to="/payment" className='sus' onClick={() => bookClass(item.title, item.price)}>Book Now</Link>
+            <p>{item.price} usd</p>
+          </div>
+        ))}
+      </div>
       
     </div> 
       <div className="card">
@@ -104,6 +135,10 @@ const ServicesPage = () => {
         <h2>Get a free Meeting</h2>
         <p className='p2'>Talk to the teacher for a better approach</p>
         <Link to="/payment"  className='sus'>FREE CLASS</Link>
+      
+        <div className="card">
+
+          </div>
 
       </div>
          </div>

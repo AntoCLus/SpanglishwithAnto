@@ -20,21 +20,9 @@ import Payment from './pages/payment'
 
 
 const App = () => {
-  const [service, setService] = useState([]);
   const [loggedIn, setLoggedIn] = useState(false);
 
-  const getAllServices = useCallback(async () => {
-    try {
-      const response = await axios.get("http://localhost:8000");
-      setService(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
-
-  useEffect(() => {
-    getAllServices();
-  }, [getAllServices]);
+ 
 
   const handleLogout = () => {
     console.log("Logging out...");
@@ -46,7 +34,7 @@ const App = () => {
        <NavBar onLogout={handleLogout} />
         <Header />
         <Routes>
-          <Route path="/form" element ={<AddService getAllServices={getAllServices}/>}/>
+          <Route path="/form" element ={<AddService/>}/>
           <Route path="/home" element={<Home/>} />
           <Route path="/" element={<Home/>} />
           <Route path="/signup" element={<SignUp />} />
@@ -55,7 +43,7 @@ const App = () => {
           <Route path="/contact" element={<ContactForm/>} />
           <Route path="/faq" element={<FAQ/>} />
           <Route path="/services" element={<Services/>} /> 
-          <Route path="/" element={<List service={service} getAllServices={getAllServices} />} />
+          <Route path="/" element={<List />} />
           <Route path="/payment" element={<Payment />} />
           
           </Routes>
