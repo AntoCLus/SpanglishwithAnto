@@ -57,9 +57,9 @@
  /* }
   */
   .messageTextarea {
-    width: 100%;
+    width: 170%;
     height: 200px; /* Adjust the height as needed */
-    padding: 20px;
+    padding: 40px;
     border: none;
     background-color: rgb(251, 245, 245);
     color: rgb(16, 15, 15);
@@ -79,7 +79,7 @@
     background-color: aliceblue;
     color: rgb(0, 0, 0);
     align-items: center;
-    margin-left: 40px;
+    margin-left: 60px;
   }
   .message1{
     color: white;

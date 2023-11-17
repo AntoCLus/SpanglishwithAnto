@@ -150,3 +150,12 @@ margin-top: 20px;
   font-size: 1.4em; /* Increase the font size on hover */
   cursor: pointer; /* Change the cursor on hover to indicate it's clickable */
 }
+.home .quotation{
+  font-size: 80px;
+  font-style: italic;
+
+}
+.about-content{
+  font-style: italic;
+  line-height: 1.5;
+}

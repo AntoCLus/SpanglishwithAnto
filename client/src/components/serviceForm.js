@@ -8,7 +8,6 @@ function AddService({ getAllServices }) {
   const navigate = useNavigate();
   const [service, setService] = useState({
     title: "",
-    imgUrl: "",
     description: "",
     price: "",
   });

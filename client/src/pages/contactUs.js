@@ -5,10 +5,6 @@ import "../components/footer.css"
 
 function ContactForm() {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-  };
 
   return (
     <div className="formContainer">
@@ -22,25 +18,19 @@ function ContactForm() {
       <div className="inputDiv">
         <form
           action="https://api.web3forms.com/submit"
-          method="POST"
-          id="form"
-          onSubmit={handleSubmit}
-        >
+          method="POST">
+        
           <input
                 type="hidden"
                 name="access_key"
-                value="YOUR_ACCESS_KEY_HERE"
+                value="8080de1d-6812-4b24-a711-a96ac94a028b"
               />
               <input
                 type="hidden"
                 name="subject"
                 value="New Submission from Web3Forms"
               />
-              <input
-                type="checkbox"
-                name="botcheck"
-                style={{ display: 'none' }}
-              />
+             
 
               <div className="mb-6">
                 <label
@@ -92,7 +82,7 @@ function ContactForm() {
               </div>
           <div className="mb-6">
           <div class="mb-6">
-            <label for="message" class="message1">Your Message</label>
+            <label for="message" class="message1"></label>
             <textarea rows="8" name="message" id="message" placeholder="Your Message" class="message :outline-none" required></textarea>
           </div>
             <button
