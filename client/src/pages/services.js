@@ -56,10 +56,15 @@ const ServicesPage = () => {
   return (
     <div className="services-page-container"> 
     <div className='calendar'>
-    <h2> SERVICES</h2>
-    <p> Sign up and log in to your account to have </p>
-      <p>access to your class material and bookings.</p>
-    <p> Contact the teacher to agree on a schedule.</p>
+    <h2 className='title'> SERVICES</h2>
+    <p className='intro'> 
+    </p>
+    <p className='introp'>Sign up and log in to your account to have: </p>
+    <ul>
+      <li>Access to your class material and bookings.</li>
+      <li>Contact with the teacher to agree on a schedule.</li>
+    </ul>
+
     <p> Have a look at the appointment schedule!.</p>
     <iframe
           src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FBelgrade&src=YW50b2x1c3RyYWR1Y2Npb25lc0BnbWFpbC5jb20&color=%23039BE5"
@@ -69,6 +74,7 @@ const ServicesPage = () => {
           frameborder="0"
           scrolling="no"
         ></iframe>  
+      
     </div> 
       <div className="card">
         <h2>Book an English lesson today!!</h2>

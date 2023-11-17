@@ -17,9 +17,13 @@
   padding-left: 3%;
   padding-right: 3%;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   background-image: url('../images/book2.jpg');
   
+}
+.services-page-container .title{
+  align-content: center;
+  align-self: center;
 }
 
 .services-page-container .services-container {
