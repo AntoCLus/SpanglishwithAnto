@@ -84,8 +84,10 @@ const login = async (req, res) => {
         .send({ msg: "Both email and password are required" });
     }
     let oldUser = await User.findOne({ email });
+    console.log(oldUser)
     if (oldUser) {
       let validPassword = await bcrypt.compare(password, oldUser.password);
+      console.log (validPassword)
       if (!validPassword) {
         return res.status(401).send({ msg: "Invalid password" });
       } else {
