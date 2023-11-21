@@ -25,7 +25,7 @@ function Footer() {
   return (
     <Button
         onClick={handleButtonClick}
-        style={{ color: '#61dafb', padding: '30px 30px', fontSize: '20px'}}
+        style={{ color: 'blue', padding: '30px 30px', fontSize: '20px'}}
       >
       <TfiEmail />
       </Button>
@@ -40,7 +40,7 @@ function Footer() {
   return (
     <Button
         onClick={handleButtonClick}
-        style={{ color: '#61dafb', padding: '30px 30px', fontSize: '20px'}}
+        style={{ color: 'green', padding: '30px 30px', fontSize: '20px'}}
       >
       <FaWhatsapp />
       </Button>

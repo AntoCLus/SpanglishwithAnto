@@ -1,6 +1,7 @@
 body{
     margin-bottom: 100px; 
     display: flexbox;
+    font-family: Inter, sans-serif;
     
 }
 .mt-5{
@@ -25,6 +26,7 @@ body{
     padding: 50px;
     color: white; 
     margin-bottom: 60px;
+    font-size: 90px;
 
   }
   .intro p, .about-content, .pictures p{
@@ -47,16 +49,16 @@ margin-top: 20px;
     background-size: cover;
     padding: 50px;
     color: white; 
-   
   }
+
   .about-content{
     background-image: none;
     font-family: Inter, sans-serif;
     text-align: justify;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 300px;
+    padding-right: 300px;
     color: black;
-    font-size: x-large;
+    font-size: 22px;
     background-color: color-mix(in green srgb, color 30% percentage, color white);
 
   }
@@ -70,17 +72,28 @@ margin-top: 20px;
     background-size: cover;
     min-width: 700px;
     min-height: 300px;
+    background-color: transparent;
 
  }
  .pictures .picture2{
     background-image: url('../images/writing.jpg') ;
     background-size: cover;
     min-width: 700px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    
  }
+ 
  .pictures p{
-    color: black;
+   color:  rgb(77, 82, 77);
     margin-top: 100px;
     font-weight: bolder;
+    font-size: 60px;
+    overflow: auto;
+    white-space: pre-wrap;
+    z-index: 1;
+
  }
   
   .testimonials {
@@ -94,6 +107,10 @@ margin-top: 20px;
     text-decoration: none;
     font-size: x-large;
   }
+  .testimonials .h2{
+  font-size: 90 px;
+  }
+  
   .card{
     border-radius: 10px;
     max-width: 300px;
@@ -105,14 +122,16 @@ margin-top: 20px;
     text-align: center;
     font-family: 'Inter', sans-serif;
   }
-  
+  .fr h1{
+    font-size: 90px;
+  }
   .fr-background{
     background-image: url('../images/b08b5f0f1977452da106294351c7075b.webp');
     margin-bottom: 100px;
   }
   .frp{
     text-decoration: none;
-    font-size: x-large;
+    font-size: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,6 +150,7 @@ margin-top: 20px;
     background-image: url('../images/f3be4ff2da7642d887eb5094442c39f5.webp') ;
     background-size: cover;
     min-width: 700px;
+    
  }
  .fr-link {
   text-decoration: none;
@@ -158,4 +178,12 @@ margin-top: 20px;
 .about-content{
   font-style: italic;
   line-height: 1.5;
+}
+
+.pictures .picture1,
+.pictures .picture2 {
+  background-size: cover;
+  min-width: 700px;
+  min-height: 300px;
+  backdrop-filter: blur(8px); /* Add a blur effect to the background images */
 }
