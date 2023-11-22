@@ -7,12 +7,11 @@
 .services-page-container  {
   margin: 0;
   padding: 48px 0;
-  font-family: "Figtree", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1.2rem;
   line-height: 1.6rem;
   /*background-image: linear-gradient(45deg, #f1b52a, #74ac14);*/
   min-height: 100vh;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   padding-left: 3%;
   padding-right: 3%;
@@ -129,4 +128,7 @@
   }
   .calendar{
     background-image: url('../images/backgorund2.jpg');
+  }
+  .services-page-container .title{
+    margin-top: 0px; 
   }

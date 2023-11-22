@@ -4,16 +4,18 @@ body{
     position: relative; 
     min-height: 90vh;
     padding-top: 80px;
+    font-family: Inter, sans-serif;
     }
     
     .footer{
     position: absolute;
     padding:2px 0px;
-    font-family: 'Play', sans-serif;
+    font-family: Inter, sans-serif;
     text-align:center;
     bottom: 0; 
     width: 100%;
     margin-top: 80px;
+    font-size: 20px;
        }
     
     .footer .row{
@@ -27,8 +29,9 @@ body{
     
     .footer .row a{
     text-decoration:none;
-    color: #56AC41(19, 167, 167);
+    color: rgb(12, 188, 47);
     transition:0.5s;
+    font-weight: bold;
     }
     
     .footer .row a:hover{
