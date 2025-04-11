@@ -25,4 +25,4 @@ replay_pid*
 .qodo
 .env
 node_modules/
-
+backend/.env
