@@ -5,13 +5,14 @@ import axios from 'axios'
 import '../components/serviceForm'
 import '../components/serviceItem'
 import { useState, useCallback, useEffect } from 'react';
+import { PopupWidget } from 'react-calendly';
 
 
 const ServicesPage = () => {
 
-  const calendarStyle = {
+  /*const calendarStyle = {
     border: 'solid 1px #777',
-  };
+  };*/
   const [service, setService] = useState([]);
   const getAllServices = useCallback(async () => {
     try {
@@ -89,21 +90,8 @@ const ServicesPage = () => {
       <p> Have a look at the appointment schedule!.</p>
       </div>
       </div>
-     
-
-      <div >
-      <iframe
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FBelgrade&src=YW50b2x1c3RyYWR1Y2Npb25lc0BnbWFpbC5jb20&color=%23039BE5"
-        style={calendarStyle}
-        width="500"
-        height="500"
-        frameBorder="0"
-        scrolling="no"
-      ></iframe>
-      </div>
+      <div className= "calendar">
       
-   
-
     <div className="card">
       <div className="service-list">
         {service.map((item, index) => (
@@ -121,9 +109,14 @@ const ServicesPage = () => {
           </div>
         ))}
       </div>
+      <div style={{ width: '100%', height: '600px', border: '0' }}>
+  <PopupWidget url="https://calendly.com/antolustraducciones"
+  rootElement={document.getElementById("root")} />
+</div>
+      </div>
     </div>
   </div>
-);
+  )
 }
 
 
